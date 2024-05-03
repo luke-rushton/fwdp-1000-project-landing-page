@@ -1,0 +1,30 @@
+/* Gona have to organize this nonsense */
+
+main{
+    flex: 1; /*more sticky footer stuff */
+}
+img{
+    max-width: 100%;
+    max-height: auto;
+}
+footer{
+    background-color: aqua;
+    flex: 0;
+}
+
+
+.splash-section{
+    background-image: url(/media/background-circles.png);
+}
+.wrapper{ /* sticky footer stuff */
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height:100vh;
+}
+
+.profile-img{
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px grey;
+}
