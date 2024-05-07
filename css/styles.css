@@ -8,6 +8,15 @@
   --dark-one: #858c7d;
   --dark-two: #4f5957;
   --highlight: #eba534;
+  --dark-highlight: brown;
+
+  /*individual image colors*/
+  --art: #402e27;
+  --osaka: #3c74a6;
+  --hanoi: #464659;
+  --kinosaki: #223f2d;
+  --halong: #283040;
+  --phu-quoc: #473c4a;
 }
 /*potential styles:
 Bebas Neue for splash
@@ -54,9 +63,25 @@ ul {
   gap: 0.75rem;
   margin-bottom: 1.5rem;
 }
-.projects img {
+.art {
   box-shadow: 0px 8px 0px 0px var(--light-one), 5px 5px 0px 2px var(--dark-two);
 }
+.osaka {
+  box-shadow: 0px 8px 0px 0px var(--light-one), 5px 5px 0px 2px var(--osaka);
+}
+.hanoi {
+  box-shadow: 0px 8px 0px 0px var(--light-one), 5px 5px 0px 2px var(--hanoi);
+}
+.kinosaki {
+  box-shadow: 0px 8px 0px 0px var(--light-one), 5px 5px 0px 2px var(--kinosaki);
+}
+.halong {
+  box-shadow: 0px 8px 0px 0px var(--light-one), 5px 5px 0px 2px var(--halong);
+}
+.phu-quoc {
+  box-shadow: 0px 8px 0px 0px var(--light-one), 5px 5px 0px 2px var(--phu-quoc);
+}
+
 .projects li {
   list-style-type: none;
   padding-left: 0rem;
@@ -88,8 +113,6 @@ ul {
   background-image: url(/media/pier.jpg);
   background-size: cover;
   background-position: center;
-
-  background-color: #a52a2a;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -135,7 +158,7 @@ ul {
 }
 #splash-name span {
   color: var(--highlight);
-  text-shadow: 4px 4px brown;
+  text-shadow: 4px 4px var(--dark-highlight);
 }
 
 /* footer stuff */
@@ -152,5 +175,5 @@ footer img {
   width: 4rem;
   margin: 0.5rem;
   border-radius: 50%;
-  box-shadow: 2px 2px 0px 1px brown;
+  box-shadow: 2px 2px 0px 1px var(--dark-highlight);
 }
