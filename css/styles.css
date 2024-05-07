@@ -1,30 +1,114 @@
 /* Gona have to organize this nonsense */
+/*potential styles:
+Bebas Neue for splash
+*/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+main {
+  flex: 1; /*more sticky footer stuff */
+  margin: auto;
+  max-width: 90%;
+}
+img {
+  max-width: 100%;
+  max-height: auto;
+}
+header {
+  background-color: gray;
 
-main{
-    flex: 1; /*more sticky footer stuff */
+  z-index: 1;
 }
-img{
-    max-width: 100%;
-    max-height: auto;
+ul {
+  padding-inline-start: 0rem;
 }
-footer{
-    background-color: aqua;
-    flex: 0;
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.projects li {
+  list-style-type: none;
+  padding-left: 0rem;
+  margin-top: 1rem;
+  padding: 3rem;
+
+  box-shadow: 2px 2px 5px 1px grey;
+  text-align: center;
+  /*animated project element stuff */
+}
+li > p {
+  display: none;
 }
 
+.splash-section {
+  background-image: url(/media/pier.jpg);
+  background-size: cover;
+  background-position: center;
 
-.splash-section{
-    background-image: url(/media/background-circles.png);
+  background-color: #a52a2a;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: white;
 }
-.wrapper{ /* sticky footer stuff */
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height:100vh;
+.splash-section button {
+  border: none;
+  font-size: 1.5rem;
+  color: white;
+  background: none;
+  align-self: flex-end;
+}
+.splash-section p {
+  text-align: left;
+  margin: 0;
+  margin-left: 0.25rem;
+  padding-bottom: 15rem;
+}
+.wrapper {
+  /* sticky footer stuff */
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
 }
 
-.profile-img{
-    border-radius: 50%;
-    box-shadow: 0px 0px 10px grey;
+.profile-img {
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px grey;
+  display: block;
+}
+
+/* ids */
+#splash-name {
+  font-family: "Bebas Neue", sans-serif;
+  line-height: 6rem;
+  text-align: left;
+  color: white;
+  font-size: 7rem;
+  margin: 0 auto;
+}
+#splash-name span {
+  color: #eba534;
+}
+
+/* footer stuff */
+footer {
+  background-color: grey;
+  color: white;
+  flex: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+}
+footer img {
+  width: 3rem;
+  padding: 0.5rem;
 }

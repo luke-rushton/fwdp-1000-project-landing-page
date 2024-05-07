@@ -1,62 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/normalize-fwd.css">
-    <link rel="stylesheet" href="/css/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/normalize-fwd.css" />
+
+    <!-- font stuff -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- my styling -->
+    <link rel="stylesheet" href="/css/styles.css" />
     <title>Landing Page</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="wrapper">
-        <header>
-            <h2>my personal site</h2>
-        </header>
-        <main>
-            <section class="splash-section">
-                <img class="profile-img" src="/media/profile pic.jpg" alt="Luke Rushton">
-                <h1>Luke Rushton</h1>
-            </section>
-            <section class="personal-info">
-                <h2>About Me</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab mollitia voluptatum dolorem aspernatur consequuntur deserunt error, harum dolores! Consectetur praesentium laborum magnam repellendus. Quisquam, sequi.</p>
-            </section>
-            <section class="projects">
-                <ul>
-                    <li>
-                        <h3>Country Website</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla, quas.</p>
-                    </li>
-                    <li>
-                        <h3>Business Website</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, soluta?</p>
-                    </li>
-                    <li>
-                        <h3>Javascript Game</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, non?</p>
-                    </li>
-                    <li>
-                        <h3>Movie Database</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, facilis.</p>
-                    </li>
-                    <li>
-                        <h3>Shopify Store</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, minima.</p>
-                    </li>
-                    <li>
-                        <h3>WooCommerce store</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, qui.</p>
-                    </li>
-                    <li>
-                        <h3>Perlin Noise</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, animi.</p>
-                    </li>
-                </ul>
-            </section>
-        </main>
-        <footer>
-            <p>copyright moi</p> <!-- make this proper -->
-        </footer>
+      <header>
+        <!--
+        <h2>my personal site</h2>
+         -->
+        <section class="splash-section">
+          <button>☰</button>
+          <!--  
+                    <img class="profile-img" src="/media/profile pic.jpg" alt="Luke Rushton">
+                -->
+          <h1 id="splash-name">L<span>u</span>ke <br />R<span>u</span>shton</h1>
+          <p>[Full Stack Developer]</p>
+        </section>
+      </header>
+      <main>
+        <section class="personal-info">
+          <h2>About Me</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab
+            mollitia voluptatum dolorem aspernatur consequuntur deserunt error,
+            harum dolores! Consectetur praesentium laborum magnam repellendus.
+            Quisquam, sequi.
+          </p>
+        </section>
+        <section class="projects">
+          <h2>Projects</h2>
+          <ul>
+            <li>
+              <h3>Country Website</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla,
+                quas.
+              </p>
+            </li>
+            <li>
+              <h3>Business Website</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Pariatur, soluta?
+              </p>
+            </li>
+            <li>
+              <h3>Javascript Game</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
+                non?
+              </p>
+            </li>
+            <li>
+              <h3>Movie Database</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Architecto, facilis.
+              </p>
+            </li>
+            <li>
+              <h3>Shopify Store</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
+                minima.
+              </p>
+            </li>
+            <li>
+              <h3>WooCommerce store</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Laboriosam, qui.
+              </p>
+            </li>
+            <li>
+              <h3>Perlin Noise</h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Necessitatibus, animi.
+              </p>
+            </li>
+          </ul>
+        </section>
+      </main>
+      <footer>
+        <p>Contact Me</p>
+        <div>
+          <a href="#"><img src="media/gmail_icon_2020.svg" alt="gmail" /></a>
+          <a href="#"><img src="media/github-mark-white.svg" alt="github" /></a>
+
+          <a href="#"
+            ><img
+              src="media/LinkedIn-Logos/LinkedIn-Logos/LI-In-Bug.png"
+              alt="linkedIn"
+          /></a>
+        </div>
+        <p>&copy; Luke Rushton</p>
+        <!-- make this proper -->
+      </footer>
     </div>
-</body>
+  </body>
 </html>
