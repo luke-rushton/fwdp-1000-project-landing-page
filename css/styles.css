@@ -1,14 +1,29 @@
 /* Gona have to organize this nonsense */
+
+/*colors*/
+:root {
+  --light-one: #f2efeb;
+  --light-two: #d9d2c5;
+  --middle: #8c884f;
+  --dark-one: #858c7d;
+  --dark-two: #4f5957;
+  --highlight: #eba534;
+}
 /*potential styles:
 Bebas Neue for splash
 */
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--light-two);
+  color: var(--dark-two);
 }
 .bebas-neue-regular {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
   font-style: normal;
+}
+h2 {
+  font-family: "Bebas Neue", sans-serif;
 }
 main {
   flex: 1; /*more sticky footer stuff */
@@ -36,14 +51,23 @@ ul {
   list-style-type: none;
   padding-left: 0rem;
   margin-top: 1rem;
-  padding: 3rem;
+  padding: 0rem;
+  max-width: 19rem;
 
-  box-shadow: 2px 2px 5px 1px grey;
-  text-align: center;
+  text-align: left;
+  background-color: var(--light-one);
   /*animated project element stuff */
 }
-li > p {
-  display: none;
+.projects h2 {
+  line-height: 1rem;
+  margin: 0rem;
+  margin-top: 1rem;
+}
+
+.projects h3 {
+  line-height: 1rem;
+  margin: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .splash-section {
@@ -56,19 +80,14 @@ li > p {
   flex-direction: column;
   text-align: center;
   color: white;
+  box-shadow: inset 0 7px 90px -7px var(--dark-two); /*might want 2 change in future */
 }
 .splash-section button {
   border: none;
   font-size: 1.5rem;
-  color: white;
+  color: var(--light-one);
   background: none;
   align-self: flex-end;
-}
-.splash-section p {
-  text-align: left;
-  margin: 0;
-  margin-left: 0.25rem;
-  padding-bottom: 15rem;
 }
 .wrapper {
   /* sticky footer stuff */
@@ -84,24 +103,35 @@ li > p {
   box-shadow: 0px 0px 10px grey;
   display: block;
 }
+.personal-info {
+  text-align: center;
+}
+.personal-info p {
+  text-align: left;
+  background-color: var(--light-one);
+  padding: 0.5rem;
+  max-width: 19rem;
+}
 
 /* ids */
 #splash-name {
   font-family: "Bebas Neue", sans-serif;
   line-height: 6rem;
   text-align: left;
-  color: white;
+  color: var(--light-one);
   font-size: 7rem;
   margin: 0 auto;
+  padding-top: 10vh;
+  padding-bottom: 50vh;
 }
 #splash-name span {
-  color: #eba534;
+  color: var(--highlight);
 }
 
 /* footer stuff */
 footer {
-  background-color: grey;
-  color: white;
+  background-color: var(--dark-one);
+  color: var(--light-one);
   flex: 0;
   display: flex;
   flex-direction: column;
