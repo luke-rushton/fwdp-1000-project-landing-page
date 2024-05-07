@@ -59,6 +59,7 @@ ul {
 }
 .projects ul {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   gap: 0.75rem;
   margin-bottom: 1.5rem;
@@ -125,6 +126,7 @@ ul {
   background: none;
   align-self: flex-end;
   text-shadow: 2px 2px var(--middle);
+  position: fixed;
 }
 .wrapper {
   /* sticky footer stuff */
@@ -141,8 +143,15 @@ ul {
   text-align: left;
   background-color: var(--light-one);
   padding: 0.5rem;
-  max-width: 19rem;
+  max-width: 100%;
+  margin: auto;
+  margin-bottom: 1.5rem;
   box-shadow: 5px 5px 0px 1px var(--middle);
+}
+@media (min-width: 31.25em) {
+  .personal-info p {
+    max-width: 30rem;
+  }
 }
 
 /* ids */
@@ -176,4 +185,13 @@ footer img {
   margin: 0.5rem;
   border-radius: 50%;
   box-shadow: 2px 2px 0px 1px var(--dark-highlight);
+}
+
+/*nav stuff */
+nav {
+  position: fixed;
+  background-color: var(--light-one);
+  top: 2rem;
+  right: 0.5rem;
+  box-shadow: 2px 2px 0px 5px var(--middle);
 }
