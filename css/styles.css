@@ -22,7 +22,9 @@
 Bebas Neue for splash
 */
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-style: normal;
   background-color: var(--light-two);
   color: var(--dark-two);
 }
@@ -31,9 +33,14 @@ body {
   font-weight: 400;
   font-style: normal;
 }
-h2 {
+h1, h2, h3 {
   font-family: "Bebas Neue", sans-serif;
+}
+h2 {
   font-size: 2.5rem;
+}
+h3{
+  font-size: 1.5rem;
 }
 main {
   flex: 1; /*more sticky footer stuff */
@@ -95,6 +102,19 @@ ul {
   box-shadow: 5px 5px 0px 2px var(--middle);
   /*animated project element stuff */
 }
+.projects h3{
+  padding-top: 0.5rem;
+  text-align: center;
+}
+
+@media (min-width: 50em){
+  .projects ul{
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch ;
+    max-width: 70rem;
+  }
+}
 .projects h2 {
   line-height: 1rem;
   margin: 0rem;
@@ -147,10 +167,12 @@ ul {
   margin: auto;
   margin-bottom: 1.5rem;
   box-shadow: 5px 5px 0px 1px var(--middle);
+  font-size: 1rem;
 }
 @media (min-width: 31.25em) {
   .personal-info p {
-    max-width: 30rem;
+    font-size: 1.5rem;
+    max-width: 70rem;
   }
 }
 
