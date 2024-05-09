@@ -12,7 +12,10 @@
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
       rel="stylesheet"
     />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- my styling -->
     <link rel="stylesheet" href="/css/styles.css" />
@@ -23,16 +26,22 @@
   </head>
   <body>
     <div class="wrapper">
-      <header>
+      <header id="page-top">
         <!--
         <h2>my personal site</h2>
          -->
         <section class="splash-section">
           <button id="nav-button">☰</button>
           <nav id="float-nav">
-            <a href="#"><img src="/media/house-color.png" alt="home button"></a>
-            <a href="#"><img src="/media/exclamation-color.png" alt="about button"></a>
-            <a href="#"><img src="/media/projects-color.png" alt="projects button"></a>
+            <a href="#page-top"
+              ><img src="/media/house-color.png" alt="home button"
+            /></a>
+            <a href="#about"
+              ><img src="/media/exclamation-color.png" alt="about button"
+            /></a>
+            <a href="#project-list"
+              ><img src="/media/projects-color.png" alt="projects button"
+            /></a>
           </nav>
           <!--  
                     <img class="profile-img" src="/media/profile pic.jpg" alt="Luke Rushton">
@@ -42,7 +51,7 @@
       </header>
       <main>
         <section class="personal-info">
-          <h2>About Me</h2>
+          <h2 id="about">About Me</h2>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab
             mollitia voluptatum dolorem aspernatur consequuntur deserunt error,
@@ -50,15 +59,11 @@
             Quisquam, sequi.
           </p>
         </section>
-        <section class="projects">
+        <section id="project-list" class="projects">
           <h2>Projects</h2>
           <ul>
             <li>
-              <img
-                class="art"
-                src="media/art.jpg"
-                alt="modern-art"
-              />
+              <img class="art" src="media/art.jpg" alt="modern-art" />
               <h3>Country Website</h3>
             </li>
             <li>
@@ -91,10 +96,16 @@
       <footer>
         <p>Contact Me</p>
         <div>
-          <a href="#"><img src="media/email-color.png" alt="gmail" /></a>
-          <a href="#"><img src="media/github-color.png" alt="github" /></a>
+          <a href="mailto:luke.rushtonx@gmail.com"
+            ><img src="media/email-color.png" alt="gmail"
+          /></a>
+          <a href="https://github.com/luke-rushton"
+            ><img src="media/github-color.png" alt="github"
+          /></a>
 
-          <a href="#"><img src="media/linkedin-color.png" alt="linkedIn" /></a>
+          <a href="https://www.linkedin.com/in/luke-rushton/"
+            ><img src="media/linkedin-color.png" alt="linkedIn"
+          /></a>
         </div>
         <p>&copy; Luke Rushton</p>
         <!-- make this proper -->

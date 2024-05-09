@@ -9,6 +9,7 @@
   --dark-two: #4f5957;
   --highlight: #eba534;
   --dark-highlight: brown;
+  --hover-highlight: yellow;
 
   /*individual image colors*/
   --art: #402e27;
@@ -33,13 +34,15 @@ body {
   font-weight: 400;
   font-style: normal;
 }
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: "Bebas Neue", sans-serif;
 }
 h2 {
   font-size: 2.5rem;
 }
-h3{
+h3 {
   font-size: 1.5rem;
 }
 main {
@@ -95,23 +98,26 @@ ul {
   padding-left: 0rem;
   margin-top: 1rem;
   padding: 0rem;
-  max-width: 19rem;
+  max-width: 30rem;
 
   text-align: left;
   background-color: var(--light-one);
   box-shadow: 5px 5px 0px 2px var(--middle);
   /*animated project element stuff */
 }
-.projects h3{
+.projects li:hover {
+  box-shadow: 5px 5px 0px 2px var(--highlight);
+}
+.projects h3 {
   padding-top: 0.5rem;
   text-align: center;
 }
 
-@media (min-width: 50em){
-  .projects ul{
+@media (min-width: 50em) {
+  .projects ul {
     flex-direction: row;
     justify-content: space-around;
-    align-items: stretch ;
+    align-items: stretch;
     max-width: 70rem;
   }
 }
@@ -121,8 +127,8 @@ ul {
   margin-top: 1rem;
 }
 .personal-info h2 {
-  line-height: 1rem;
   margin: 2rem;
+  margin-top: 1rem;
 }
 .projects h3 {
   line-height: 1rem;
@@ -208,11 +214,14 @@ footer img {
   border-radius: 50%;
   box-shadow: 2px 2px 0px 1px var(--dark-highlight);
 }
+footer img:hover {
+  box-shadow: 2px 2px 0px 1px var(--hover-highlight);
+}
 
 /*nav stuff */
 #float-nav {
   position: fixed;
- 
+
   display: none;
   top: 2rem;
   right: 0.5rem;
@@ -220,20 +229,20 @@ footer img {
   justify-content: space-around;
   gap: 0.75rem;
 }
-#float-nav img{
+#float-nav img {
   width: 4rem;
   filter: drop-shadow(3px 3px var(--dark-highlight));
 }
-#float-nav img:hover{
+#float-nav img:hover {
   width: 4rem;
-  filter: drop-shadow(3px 3px yellow);
+  filter: drop-shadow(3px 3px var(--hover-highlight));
 }
-@media (min-width: 50em){
-  #float-nav{
+@media (min-width: 50em) {
+  #float-nav {
     display: flex;
     top: 35%;
   }
-  #nav-button{
+  #nav-button {
     display: none;
   }
 }
