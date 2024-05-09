@@ -1,6 +1,6 @@
-/* Gona have to organize this nonsense */
+/* BASE STYLES -------------------------------------------------------------------*/
 
-/*colors*/
+/*Variables -------------------------------------------------------------------*/
 :root {
   --light-one: #f2efeb;
   --light-two: #d9d2c5;
@@ -19,125 +19,58 @@
   --halong: #283040;
   --phu-quoc: #473c4a;
 }
-/*potential styles:
-Bebas Neue for splash
-*/
-body {
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  background-color: var(--light-two);
-  color: var(--dark-two);
-}
+/* FONT -------------------------------------------------------------------*/
 .bebas-neue-regular {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
+
+body {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  /*background color*/
+  background-color: var(--light-two);
+  color: var(--dark-two);
+}
+
 h1,
 h2,
 h3 {
   font-family: "Bebas Neue", sans-serif;
 }
+
 h2 {
   font-size: 2.5rem;
 }
+
 h3 {
   font-size: 1.5rem;
 }
-main {
-  flex: 1; /*more sticky footer stuff */
-  margin: auto;
-  max-width: 90%;
-}
+
+/* BASE -------------------------------------------------------------------*/
 img {
   max-width: 100%;
   max-height: auto;
 }
+ul {
+  padding-inline-start: 0rem;
+}
+.wrapper {
+  /* sticky footer stuff */
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+/* HEADER -------------------------------------------------------------------*/
 header {
   background-color: gray;
 
   z-index: 1;
 }
-ul {
-  padding-inline-start: 0rem;
-}
-.projects {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.projects ul {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  gap: 0.75rem;
-  margin-bottom: 1.5rem;
-}
-.art {
-  box-shadow: 0px 8px 0px 0px var(--light-one), 5px 5px 0px 2px var(--dark-two);
-}
-.osaka {
-  box-shadow: 0px 8px 0px 0px var(--light-one), 5px 5px 0px 2px var(--osaka);
-}
-.hanoi {
-  box-shadow: 0px 8px 0px 0px var(--light-one), 5px 5px 0px 2px var(--hanoi);
-}
-.kinosaki {
-  box-shadow: 0px 8px 0px 0px var(--light-one), 5px 5px 0px 2px var(--kinosaki);
-}
-.halong {
-  box-shadow: 0px 8px 0px 0px var(--light-one), 5px 5px 0px 2px var(--halong);
-}
-.phu-quoc {
-  box-shadow: 0px 8px 0px 0px var(--light-one), 5px 5px 0px 2px var(--phu-quoc);
-}
-
-.projects li {
-  list-style-type: none;
-  padding-left: 0rem;
-  margin-top: 1rem;
-  padding: 0rem;
-  max-width: 100%;
-
-  text-align: left;
-  background-color: var(--light-one);
-  box-shadow: 5px 5px 0px 2px var(--middle);
-  /*animated project element stuff */
-}
-.projects li:hover {
-  box-shadow: 5px 5px 0px 2px var(--highlight);
-}
-.projects h3 {
-  padding-top: 0.5rem;
-  text-align: center;
-}
-
-@media (min-width: 50em) {
-  .projects ul {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: stretch;
-    max-width: 70rem;
-  }
-  .projects li {
-    max-width: 49%;
-  }
-}
-.projects h2 {
-  line-height: 1rem;
-  margin: 1rem;
-  margin-top: 2rem;
-}
-.personal-info h2 {
-  margin: 2rem;
-}
-.projects h3 {
-  line-height: 1rem;
-  margin: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
 .splash-section {
   /* for no gradient
   background-image: url(/media/pier.jpg);
@@ -161,35 +94,6 @@ ul {
   text-shadow: 2px 2px var(--middle);
   position: fixed;
 }
-.wrapper {
-  /* sticky footer stuff */
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: 100vh;
-}
-.personal-info {
-  text-align: center;
-}
-.personal-info p {
-  text-align: left;
-  background-color: var(--light-one);
-  padding: 0.5rem;
-  max-width: 100%;
-  margin: auto;
-  margin-bottom: 1.5rem;
-  box-shadow: 5px 5px 0px 1px var(--middle);
-  font-size: 1rem;
-}
-@media (min-width: 31.25em) {
-  .personal-info p {
-    font-size: 1.5rem;
-    max-width: 70rem;
-  }
-}
-
-/* ids */
 #splash-name {
   font-family: "Bebas Neue", sans-serif;
   line-height: 6rem;
@@ -205,27 +109,7 @@ ul {
   text-shadow: 4px 4px var(--dark-highlight);
 }
 
-/* footer stuff */
-footer {
-  background-color: var(--dark-one);
-  color: var(--light-one);
-  flex: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1.5rem;
-}
-footer img {
-  width: 4rem;
-  margin: 0.5rem;
-  border-radius: 50%;
-  box-shadow: 2px 2px 0px 1px var(--dark-highlight);
-}
-footer img:hover {
-  box-shadow: 2px 2px 0px 1px var(--hover-highlight);
-}
-
-/*nav stuff */
+/* NAV -------------------------------------------------------------------*/
 #float-nav {
   position: fixed;
 
@@ -244,6 +128,7 @@ footer img:hover {
   width: 4rem;
   filter: drop-shadow(3px 3px var(--hover-highlight));
 }
+/*media queries*/
 @media (min-width: 50em) {
   #float-nav {
     display: flex;
@@ -252,4 +137,122 @@ footer img:hover {
   #nav-button {
     display: none;
   }
+}
+
+/* MAIN -------------------------------------------------------------------*/
+main {
+  flex: 1; /*more sticky footer stuff */
+  margin: auto;
+  max-width: 90%;
+}
+.personal-info {
+  text-align: center;
+}
+.personal-info h2 {
+  margin: 2rem;
+}
+.personal-info p {
+  text-align: left;
+  background-color: var(--light-one);
+  padding: 0.5rem;
+  max-width: 70rem;
+  margin: auto;
+  margin-bottom: 1.5rem;
+  box-shadow: 5px 5px 0px 1px var(--middle);
+  font-size: 1rem;
+}
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.projects h2 {
+  line-height: 1rem;
+  margin: 1rem;
+  margin-top: 2rem;
+}
+.projects h3 {
+  padding-top: 0.5rem;
+  text-align: center;
+  line-height: 1rem;
+  margin: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.projects ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+.projects li {
+  list-style-type: none;
+  padding-left: 0rem;
+  margin-top: 1rem;
+  padding: 0rem;
+  max-width: 100%;
+
+  text-align: left;
+  background-color: var(--light-one);
+  box-shadow: 5px 5px 0px 2px var(--middle);
+  /*animated project element stuff */
+}
+.projects li:hover {
+  box-shadow: 5px 5px 0px 2px var(--highlight);
+}
+/*styling for shadows for each project box */
+.art {
+  box-shadow: 0px 8px 0px 0px var(--light-one), 5px 5px 0px 2px var(--dark-two);
+}
+.osaka {
+  box-shadow: 0px 8px 0px 0px var(--light-one), 5px 5px 0px 2px var(--osaka);
+}
+.hanoi {
+  box-shadow: 0px 8px 0px 0px var(--light-one), 5px 5px 0px 2px var(--hanoi);
+}
+.kinosaki {
+  box-shadow: 0px 8px 0px 0px var(--light-one), 5px 5px 0px 2px var(--kinosaki);
+}
+.halong {
+  box-shadow: 0px 8px 0px 0px var(--light-one), 5px 5px 0px 2px var(--halong);
+}
+.phu-quoc {
+  box-shadow: 0px 8px 0px 0px var(--light-one), 5px 5px 0px 2px var(--phu-quoc);
+}
+/*media queries */
+@media (min-width: 31.25em) {
+  .personal-info p {
+    font-size: 1.5rem; /*maybe switch to clamp */
+  }
+}
+@media (min-width: 50em) {
+  .projects ul {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    max-width: 70rem;
+  }
+  .projects li {
+    max-width: 49%;
+  }
+}
+
+/* FOOTER -------------------------------------------------------------------*/
+footer {
+  background-color: var(--dark-one);
+  color: var(--light-one);
+  flex: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+}
+footer img {
+  width: 4rem;
+  margin: 0.5rem;
+  border-radius: 50%;
+  box-shadow: 2px 2px 0px 1px var(--dark-highlight);
+}
+footer img:hover {
+  box-shadow: 2px 2px 0px 1px var(--hover-highlight);
 }
