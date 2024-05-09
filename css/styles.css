@@ -98,7 +98,7 @@ ul {
   padding-left: 0rem;
   margin-top: 1rem;
   padding: 0rem;
-  max-width: 30rem;
+  max-width: 100%;
 
   text-align: left;
   background-color: var(--light-one);
@@ -116,19 +116,21 @@ ul {
 @media (min-width: 50em) {
   .projects ul {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: stretch;
     max-width: 70rem;
+  }
+  .projects li {
+    max-width: 49%;
   }
 }
 .projects h2 {
   line-height: 1rem;
-  margin: 0rem;
-  margin-top: 1rem;
+  margin: 1rem;
+  margin-top: 2rem;
 }
 .personal-info h2 {
   margin: 2rem;
-  margin-top: 1rem;
 }
 .projects h3 {
   line-height: 1rem;
@@ -137,12 +139,17 @@ ul {
 }
 
 .splash-section {
+  /* for no gradient
   background-image: url(/media/pier.jpg);
+  */
+  background-image: linear-gradient(rgba(255, 0, 0, 0), var(--light-two) 99%),
+    url(/media/pier.jpg);
   background-size: cover;
   background-position: center;
   display: flex;
   flex-direction: column;
   text-align: center;
+  /*
   box-shadow: inset 0 7px 90px -7px var(--dark-one); /*might want 2 change in future */
 }
 .splash-section button {
