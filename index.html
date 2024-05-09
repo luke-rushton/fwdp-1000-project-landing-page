@@ -17,6 +17,9 @@
     <!-- my styling -->
     <link rel="stylesheet" href="/css/styles.css" />
     <title>Landing Page</title>
+
+    <!-- scripts -->
+    <script defer src="/scripts/button-toggle.js"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -25,9 +28,11 @@
         <h2>my personal site</h2>
          -->
         <section class="splash-section">
-          <button>☰</button>
-          <nav>
-            <p>navigate the page</p>
+          <button id="nav-button">☰</button>
+          <nav id="float-nav">
+            <a href="#"><img src="/media/house-color.png" alt="home button"></a>
+            <a href="#"><img src="/media/exclamation-color.png" alt="about button"></a>
+            <a href="#"><img src="/media/projects-color.png" alt="projects button"></a>
           </nav>
           <!--  
                     <img class="profile-img" src="/media/profile pic.jpg" alt="Luke Rushton">

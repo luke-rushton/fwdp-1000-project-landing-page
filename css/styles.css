@@ -210,10 +210,30 @@ footer img {
 }
 
 /*nav stuff */
-nav {
+#float-nav {
   position: fixed;
-  background-color: var(--light-one);
+ 
+  display: none;
   top: 2rem;
   right: 0.5rem;
-  box-shadow: 2px 2px 0px 5px var(--middle);
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 0.75rem;
+}
+#float-nav img{
+  width: 4rem;
+  filter: drop-shadow(3px 3px var(--dark-highlight));
+}
+#float-nav img:hover{
+  width: 4rem;
+  filter: drop-shadow(3px 3px yellow);
+}
+@media (min-width: 50em){
+  #float-nav{
+    display: flex;
+    top: 35%;
+  }
+  #nav-button{
+    display: none;
+  }
 }
