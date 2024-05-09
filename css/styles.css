@@ -76,7 +76,7 @@ header {
   background-image: url(/media/pier.jpg);
   */
   background-image: linear-gradient(rgba(255, 0, 0, 0), var(--light-two) 99%),
-    url(/media/pier.jpg);
+    url(../media/pier.jpg);
   background-size: cover;
   background-position: center;
   display: flex;
