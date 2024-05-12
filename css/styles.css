@@ -52,7 +52,7 @@ h3 {
 /* BASE -------------------------------------------------------------------*/
 img {
   max-width: 100%;
-  max-height: auto;
+  height: auto;
 }
 ul {
   padding-inline-start: 0rem;
